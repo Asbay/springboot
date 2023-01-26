@@ -1,5 +1,7 @@
 package com.tpe.service;
 
+
+
 import com.tpe.domain.Student;
 import com.tpe.dto.StudentDTO;
 import com.tpe.exception.ConflictException;
@@ -67,7 +69,7 @@ public class StudentService {
 
     public Page<Student> getAllWithPage(Pageable pageable) {
 
-       return studentRepository.findAll(pageable); // SQL
+        return studentRepository.findAll(pageable); // SQL
     }
 
     public List<Student> findStudent(String lastName){
@@ -76,7 +78,7 @@ public class StudentService {
     }
 
     public List<Student> findAllEqualsGrade(Integer grade) {
-         return studentRepository.findAllEqualsGrade(grade);
+        return studentRepository.findAllEqualsGrade(grade);
     }
 
     public StudentDTO findStudentDTOById(Long id) {
